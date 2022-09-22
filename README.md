@@ -8,8 +8,9 @@
 
 # screen shot 
 
-![image](<img width="959" alt="Screenshot 2022-09-22 120832" src="https://user-images.githubusercontent.com/101730475/191676708-f4b1d8d3-a0be-4e0e-85da-9185b6133808.png">
-)
+<img width="959" alt="Screenshot 2022-09-22 120832" src="https://user-images.githubusercontent.com/101730475/191677285-450182ca-945b-4271-b6b5-b12a1f6a0dd8.png">
+
+
 
 
 

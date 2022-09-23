@@ -103,9 +103,10 @@ console.log(error);
     }
     const start=(e)=>{ 
       var currenttime= new Date();        
-    // var id=document.querySelector('.starttime').getAttribute('id');
-    // console.log(id);
-    // innerHTML= `${currenttime.getHours()}:${currenttime.getMinutes()}`
+    var id=`#starttime${e.target.id}`
+    document.querySelector(id).innerHTML= `${currenttime.getHours()}:${currenttime.getMinutes()}`
+    
+    
       setCurbtn(e.target.id)
         setTime(setInterval(displaytime.bind(this,e.target.id), 1000));
         
@@ -163,6 +164,7 @@ console.log(error);
       </thead>
       
         {taskdata.map((element,index)=>{
+          
           return <>
           <tbody>
         <tr>
@@ -171,13 +173,14 @@ console.log(error);
           <td>{element.task_desc}</td>
           
           <td>{element.created_at}</td>
-          {/* <td className="starttime" >00:00</td> */}
+          <td id={"starttime"+index} >00:00</td>
           
             <button type='button' className='btn1' id={index}  onClick={timer==false? start: stop}>start</button>
           
         </tr>
       </tbody>
-          </>
+      </>
+          
         })}
           
          
